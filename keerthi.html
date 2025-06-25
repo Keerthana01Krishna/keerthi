@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Builder</title>
+    <style>
+        body {
+            background-color: #f0f4f8; /* Light soft blue background */
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            margin: 0;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            max-width: 700px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            margin-top: 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Resume Builder</h2>
+
+    <form action="/cgi-bin/keerthi.cgi" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="text" name="phone" required>
+
+        <label for="address">Address:</label>
+        <textarea name="address" rows="3" required></textarea>
+
+        <label for="objective">Objective:</label>
+        <textarea name="objective" rows="3" required></textarea>
+
+        <label for="education1">Education Detail 1:</label>
+        <textarea name="education1" rows="3" required></textarea>
+
+        <label for="education2">Education Detail 2:</label>
+        <textarea name="education2" rows="3" required></textarea>
+
+        <label for="project">Project:</label>
+        <textarea name="project" rows="3" required></textarea>
+
+        <label for="interest">Interest:</label>
+        <textarea name="interest" rows="3" required></textarea>
+
+        <label for="skills">Skills:</label>
+        <textarea name="skills" rows="3" required></textarea>
+
+        <label for="experience">Experience:</label>
+        <textarea name="experience" rows="3" required></textarea>
+
+        <input type="submit" value="Generate Resume">
+    </form>
+
+</body>
+</html>
