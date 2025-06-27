@@ -1,0 +1,17 @@
+body{
+    background-color:black;
+}
+#form
+{.
+    background-color:white;
+    width:20rem;
+    height:20rem;
+    text-align:center;
+}
+#form button{
+    background-color:rgba(250,0,0);
+    color:white;
+    border:none;
+    cursor:pointer;
+    width:170px;
+}
